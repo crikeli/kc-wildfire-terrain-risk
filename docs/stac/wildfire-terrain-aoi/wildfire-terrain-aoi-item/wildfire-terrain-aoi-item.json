@@ -1,0 +1,113 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [],
+  "id": "wildfire-terrain-aoi-item",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -121.53883985544633,
+          47.373834902469774
+        ],
+        [
+          -121.51244022922862,
+          47.373834902469774
+        ],
+        [
+          -121.51244022922862,
+          47.39209072267086
+        ],
+        [
+          -121.53883985544633,
+          47.39209072267086
+        ],
+        [
+          -121.53883985544633,
+          47.373834902469774
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -121.53883985544633,
+    47.373834902469774,
+    -121.51244022922862,
+    47.39209072267086
+  ],
+  "properties": {
+    "description": "AOI DEM and derived terrain-risk layers",
+    "source": "King County 2016 LiDAR bare-earth DEM, via NOAA Digital Coast",
+    "datetime": "2016-01-01T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "King County Wildfire Terrain Risk - AOI Assets"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "elevation": {
+      "href": "../../../cogs/dem_aoi.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "King County 2016 LiDAR bare-earth DEM (AOI clip)",
+      "roles": [
+        "data"
+      ]
+    },
+    "slope": {
+      "href": "../../../cogs/slope.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Slope (degrees), derived via xarray-spatial",
+      "roles": [
+        "data"
+      ]
+    },
+    "aspect": {
+      "href": "../../../cogs/aspect.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Aspect (degrees), derived via xarray-spatial",
+      "roles": [
+        "data"
+      ]
+    },
+    "hillshade": {
+      "href": "../../../cogs/hillshade.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Hillshade, derived via xarray-spatial",
+      "roles": [
+        "data"
+      ]
+    },
+    "distance": {
+      "href": "../../../cogs/distance_to_fire_station.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Distance to nearest fire station (ft)",
+      "roles": [
+        "data"
+      ]
+    },
+    "risk": {
+      "href": "../../../cogs/terrain_risk_index.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "Illustrative composite terrain risk index (0-1)",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "wildfire-terrain-aoi"
+}

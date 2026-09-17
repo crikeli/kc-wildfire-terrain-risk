@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+
+# Large intermediate downloads (the raw remote clip before COG conversion) -
+# regeneratable via data/build_cog.py. The final small COGs under data/cogs/
+# ARE committed - they're the point of the project and are small by design.
+data/scratch/

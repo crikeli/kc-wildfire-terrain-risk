@@ -1,0 +1,17 @@
+{
+  "tile_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/dem/WA_King_DEM_2016_8589/kingcounty_delivery4_block1_be.tif",
+  "is_valid_cog": true,
+  "cog_errors": [],
+  "cog_warnings": [],
+  "file_size_bytes": 1350406694,
+  "block_shape": [
+    512,
+    512
+  ],
+  "total_blocks": 22776,
+  "blocks_touched_by_aoi_window": 25,
+  "pct_of_file_blocks_touched": 0.1098,
+  "window_read_seconds": 1.082,
+  "window_pixel_count": 4840000,
+  "window_raw_bytes_uncompressed": 19360000
+}

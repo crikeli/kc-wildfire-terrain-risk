@@ -1,0 +1,16 @@
+{
+  "tile_name": "kingcounty_delivery4_block2_be.tif",
+  "tile_url": "https://noaa-nos-coastal-lidar-pds.s3.amazonaws.com/dem/WA_King_DEM_2016_8589/kingcounty_delivery4_block2_be.tif",
+  "crs_epsg": 2926,
+  "anchor_point_ft": [
+    1468906.8899818016,
+    140463.7829999925
+  ],
+  "clip_bbox_ft": [
+    1465606.8899818016,
+    137163.7829999925,
+    1472206.8899818016,
+    143763.7829999925
+  ],
+  "clip_bbox_note": "minx, miny, maxx, maxy in EPSG:2926 (US survey feet)"
+}

@@ -1,0 +1,10 @@
+{
+  "high_risk_percentile_threshold": 75,
+  "risk_threshold_value": 0.47733938694000244,
+  "total_valid_cells": 4831204,
+  "total_high_risk_cells": 1207802,
+  "total_official_wui_cells": 4810290,
+  "pct_high_risk_cells_inside_official_wui": 99.5,
+  "pct_high_risk_cells_outside_official_wui": 0.5,
+  "pct_official_wui_cells_flagged_high_risk": 25.0
+}

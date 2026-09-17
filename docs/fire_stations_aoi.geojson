@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "fire_stations_aoi",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 37, "FEATURE_ID": 10000007, "ESITE": "24500", "CODE": 66, "NAME": "Station 291", "ABB_NAME": "291", "ADDRESS": "69802 SE Snoqualmie Pass Summit Rd", "ZIPCODE": "98065", "DISTRICT": "51", "NEWSTA": "Y", "RESOLUTION": "new to firestn added 3/12/03\n", "WEBSITE": "https://www.snoqualmiepassfirerescue.org/", "PIN": "0422119001", "MAJOR": "042211", "MINOR": "9001" }, "geometry": { "type": "Point", "coordinates": [ -121.414392042962874, 47.424976178519863 ] } }
+]
+}
