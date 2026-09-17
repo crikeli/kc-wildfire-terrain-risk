@@ -163,6 +163,7 @@ PAGE_TEMPLATE = """<!doctype html>
         }},
       }});
       riskLayer.addTo(map);
+      riskLayer.bringToFront();
     }});
 
   let wuiLayer, stationsLayer;
@@ -178,7 +179,7 @@ PAGE_TEMPLATE = """<!doctype html>
   }});
 
   document.getElementById("toggle-risk").addEventListener("change", function (e) {{
-    if (riskLayer) {{ e.target.checked ? riskLayer.addTo(map) : map.removeLayer(riskLayer); }}
+    if (riskLayer) {{ e.target.checked ? riskLayer.addTo(map).bringToFront() : map.removeLayer(riskLayer); }}
   }});
   document.getElementById("toggle-hillshade").addEventListener("change", function (e) {{
     if (hillshadeLayer) {{ e.target.checked ? hillshadeLayer.addTo(map) : map.removeLayer(hillshadeLayer); }}
